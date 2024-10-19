@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #E85D04;
+  --secondary-color: #6B8573;
+  --accent-color: #DC2F02;
+  --background-color: #FBE9D1;
+  --text-color: #333333;
+  --heading-font: 'Palatino', serif;
+  --body-font: 'Open Sans', sans-serif;
+
+  --primary-green: #6B8573;
+  --primary-orange: #D35400;
+  --background-beige: #FBE9D1;
+  --text-dark: #2C3E50;
+}
+
+body{
+  /*background-image: url("./1667.jpg");*/
+  background-color: var(--background-beige);
+  font-family: 'Poppins';
+}
+
+header {
+  padding: 10px;
+  background-color: #ffffff46;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header span{
+  font-size: 1.4rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-orange);
+  padding: 5px 20px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+button:active{
+  color: green;
+  border-bottom: 1px solid green;
+}
+
+button:hover {
+  color: green;
+  border-bottom: 1px solid green;
+}
+
+
+.logo {
+  width: 500px;
+  color: black;
+}
+
+
+
+.landing {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.landing div{
+  width: 60%;
+}
+
+.landing h1{
+  color: var(--text-dark);
+}
+
+.landing p{
+  margin-top: 20px;
+  color: var(--primary-orange);
+  font-size: 1.4rem;
+}
+
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  background-color: white;
+}
+
+.recipe-card {
+  text-align: center;
+  border: 3px solid var(--primary-green);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.recipe-card div > h1{
+  color: var(--text-dark);
+}
+
+.recipe-card div > span{
+  color: var(--primary-orange);
+}
+
+.recipe-card div > p{
+  color: var(--text-colorprimary-orange);
+}
+
+.recipe-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.grid-layout {
+  /* background-color:#33333383; */
+  background-color: #ffffff46;
+  margin: 3rem;
+  padding: 2rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+.abouts{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.abouts h1{
+  color: var(--text-dark);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.abouts p{
+  width: 70%;
+}
